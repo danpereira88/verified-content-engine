@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "conflict.schema.json",
+  "title": "conflict",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "product_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/claim_id"
+      },
+      "minItems": 2
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "contradiction",
+        "absolute-vs-exception",
+        "living-vs-changelog"
+      ]
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "interim_default": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "common.schema.json#/$defs/claim_id"
+        }
+      ]
+    },
+    "interim_label": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "resolved"
+      ]
+    },
+    "created_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    }
+  },
+  "required": [
+    "id",
+    "product_id",
+    "claim_ids",
+    "kind",
+    "explanation",
+    "interim_default",
+    "status",
+    "created_at"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "claim.schema.json",
+  "title": "claim",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/claim_id"
+    },
+    "product_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "quote": {
+      "type": "string",
+      "minLength": 1
+    },
+    "quote_hash": {
+      "$ref": "common.schema.json#/$defs/sha256"
+    },
+    "source_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "location": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "$ref": "common.schema.json#/$defs/category"
+    },
+    "confidence": {
+      "$ref": "common.schema.json#/$defs/confidence"
+    },
+    "status": {
+      "$ref": "common.schema.json#/$defs/claim_status"
+    },
+    "user_decision": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "confirmed",
+                "rejected",
+                "deprioritized",
+                "doc-wrong"
+              ]
+            },
+            "note": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string",
+              "minLength": 1
+            },
+            "at": {
+              "$ref": "common.schema.json#/$defs/datetime"
+            },
+            "ruling_id": {
+              "$ref": "common.schema.json#/$defs/id"
+            }
+          },
+          "required": [
+            "kind",
+            "note",
+            "author",
+            "at",
+            "ruling_id"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "deprioritized": {
+      "type": "boolean"
+    },
+    "status_reason": {
+      "type": "string"
+    },
+    "count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "created_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    },
+    "updated_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    }
+  },
+  "required": [
+    "id",
+    "product_id",
+    "text",
+    "quote",
+    "quote_hash",
+    "source_id",
+    "location",
+    "category",
+    "confidence",
+    "status",
+    "user_decision",
+    "created_at",
+    "updated_at"
+  ],
+  "additionalProperties": false
+}

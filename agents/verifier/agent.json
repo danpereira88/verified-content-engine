@@ -1,0 +1,18 @@
+{
+  "role": "verifier",
+  "description": "The hard gate: per-sentence verdicts against the registry.",
+  "output_schema": "gate-verdicts",
+  "tools": [
+    "get_claim",
+    "search_registry",
+    "get_snapshot_text",
+    "write_output"
+  ],
+  "skills": [],
+  "default_model": "claude-opus-5-5",
+  "max_turns": 16,
+  "max_output_tokens": 16000,
+  "inject": [
+    "draft_hash"
+  ]
+}

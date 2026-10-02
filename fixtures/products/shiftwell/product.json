@@ -1,0 +1,33 @@
+{
+  "slug": "shiftwell",
+  "name": "Shiftwell",
+  "company": "Brightline Software",
+  "claim_prefix": "SHIFT",
+  "content_types": ["landing-page", "one-pager", "email", "blog-post", "faq", "release-note"],
+  "high_risk_categories": ["compliance", "metric", "pricing", "competitive", "customer-reference", "market-evidence"],
+  "buyer_persona": {
+    "name": "Rosalind Achterberg",
+    "role": "Head of operations for a group of 11 care homes and 4 outpatient clinics",
+    "priorities": [
+      "Stop losing mornings to last-minute sick calls",
+      "Cut agency spend on unfilled shifts",
+      "Keep every shift at safe staffing levels",
+      "Get the rota out of spreadsheets without retraining everyone"
+    ],
+    "objections": [
+      "What does this cost per staff member per month, including onboarding?",
+      "Which care groups like ours already use it? I want to speak to a reference.",
+      "Are you ISO 27001 or HITRUST certified? Our IT and data protection leads will ask.",
+      "Half my carers have old phones. Will the app actually work for them?",
+      "What happens on a Sunday night if your system goes down and I need to cover a shift?"
+    ],
+    "language": [
+      "the 6am sick call",
+      "ringing round for cover",
+      "agency staff cost us a fortune",
+      "the rota lives in a spreadsheet",
+      "who swapped with who",
+      "safe staffing on every shift"
+    ]
+  }
+}

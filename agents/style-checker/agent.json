@@ -1,0 +1,14 @@
+{
+  "role": "style-checker",
+  "description": "Score the draft against the style profile.",
+  "output_schema": "checker-report",
+  "tools": [
+    "read_artifact",
+    "write_output"
+  ],
+  "skills": [],
+  "default_model": "claude-sonnet-5-5",
+  "max_turns": 16,
+  "max_output_tokens": 16000,
+  "inject": []
+}

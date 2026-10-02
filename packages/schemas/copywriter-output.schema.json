@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "copywriter-output.schema.json",
+  "title": "copywriter-output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "draft_md",
+    "claim_map",
+    "missing_claims",
+    "writing_aid_flags"
+  ],
+  "properties": {
+    "draft_md": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_map": {
+      "$ref": "draft-meta.schema.json#/properties/claim_map"
+    },
+    "missing_claims": {
+      "$ref": "draft-meta.schema.json#/properties/missing_claims"
+    },
+    "writing_aid_flags": {
+      "$ref": "draft-meta.schema.json#/properties/writing_aid_flags"
+    }
+  }
+}

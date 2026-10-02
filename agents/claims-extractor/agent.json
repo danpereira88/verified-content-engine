@@ -1,0 +1,17 @@
+{
+  "role": "claims-extractor",
+  "description": "Turn one truth source into atomic, cited claims.",
+  "output_schema": "claims-record",
+  "tools": [
+    "read_artifact",
+    "get_snapshot_text",
+    "write_output"
+  ],
+  "skills": [],
+  "default_model": "claude-sonnet-5-5",
+  "max_turns": 16,
+  "max_output_tokens": 16000,
+  "inject": [
+    "source_id"
+  ]
+}

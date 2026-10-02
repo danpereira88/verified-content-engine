@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "registry.schema.json",
+  "title": "registry",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "generated_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    },
+    "stats": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "claim.schema.json"
+      }
+    }
+  },
+  "required": [
+    "product_id",
+    "generated_at",
+    "stats",
+    "claims"
+  ],
+  "additionalProperties": false
+}

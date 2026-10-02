@@ -1,0 +1,17 @@
+{
+  "role": "best-practice-auditor",
+  "description": "Structure, CTA, positioning fit and awareness-stage match.",
+  "output_schema": "checker-report",
+  "tools": [
+    "read_artifact",
+    "write_output"
+  ],
+  "skills": [
+    "positioning-auditor",
+    "awareness-scorer"
+  ],
+  "default_model": "claude-sonnet-5-5",
+  "max_turns": 16,
+  "max_output_tokens": 16000,
+  "inject": []
+}

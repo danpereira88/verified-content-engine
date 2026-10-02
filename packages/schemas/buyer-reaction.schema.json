@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "buyer-reaction.schema.json",
+  "title": "buyer-reaction",
+  "type": "object",
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "maybe",
+        "no"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "objections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "answerable_by_docs": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "text",
+          "answerable_by_docs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "missing_proof": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "verdict",
+    "summary",
+    "objections",
+    "missing_proof"
+  ],
+  "additionalProperties": false
+}

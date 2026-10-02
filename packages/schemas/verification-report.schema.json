@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verification-report.schema.json",
+  "title": "verification-report",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "round": {
+      "type": "integer"
+    },
+    "round_kind": {
+      "type": "string",
+      "enum": [
+        "initial",
+        "auto",
+        "human-directed",
+        "edit"
+      ]
+    },
+    "draft_hash": {
+      "$ref": "common.schema.json#/$defs/sha256"
+    },
+    "status": {
+      "$ref": "common.schema.json#/$defs/content_status"
+    },
+    "block_count": {
+      "type": "integer"
+    },
+    "high_count": {
+      "type": "integer"
+    },
+    "low_count": {
+      "type": "integer"
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "block",
+              "high",
+              "low"
+            ]
+          },
+          "issue": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sentence": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "source",
+          "severity",
+          "issue"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "checker_scores": {
+      "type": "object"
+    },
+    "checkers_missing": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "auto_revisions_used": {
+      "type": "integer"
+    },
+    "override": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "by": {
+              "type": "string",
+              "minLength": 1
+            },
+            "at": {
+              "$ref": "common.schema.json#/$defs/datetime"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "by",
+            "at",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "positioning_marks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sentence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "by": {
+            "type": "string",
+            "minLength": 1
+          },
+          "at": {
+            "$ref": "common.schema.json#/$defs/datetime"
+          }
+        },
+        "required": [
+          "sentence",
+          "by",
+          "at"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "generated_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    }
+  },
+  "required": [
+    "run_id",
+    "round",
+    "round_kind",
+    "draft_hash",
+    "status",
+    "block_count",
+    "high_count",
+    "low_count",
+    "flags",
+    "checker_scores",
+    "checkers_missing",
+    "auto_revisions_used",
+    "override",
+    "positioning_marks",
+    "generated_at"
+  ],
+  "additionalProperties": false
+}

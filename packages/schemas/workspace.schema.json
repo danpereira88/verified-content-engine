@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "workspace.schema.json",
+  "title": "workspace",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    },
+    "settings": {
+      "type": "object",
+      "properties": {
+        "retention_days": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "run_budget_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "workspace_budget_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "evidence_enabled": {
+          "type": "boolean"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "created_at",
+    "settings"
+  ],
+  "additionalProperties": false
+}

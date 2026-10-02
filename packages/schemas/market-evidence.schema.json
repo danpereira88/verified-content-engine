@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "market-evidence.schema.json",
+  "title": "market-evidence",
+  "type": "object",
+  "properties": {
+    "source_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "count": {
+            "type": "integer"
+          },
+          "total": {
+            "type": "integer"
+          },
+          "query": {
+            "type": "string",
+            "minLength": 1
+          },
+          "segment": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "text",
+          "count",
+          "total",
+          "query",
+          "segment"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "buyer_language": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "phrase": {
+            "type": "string",
+            "minLength": 1
+          },
+          "count": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "phrase",
+          "count"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "source_id",
+    "claims",
+    "buyer_language"
+  ],
+  "additionalProperties": false
+}

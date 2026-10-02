@@ -1,0 +1,18 @@
+{
+  "role": "style-extractor",
+  "description": "Learn voice, cadence, vocabulary, naming and formatting from style sources.",
+  "output_schema": "style-profile",
+  "tools": [
+    "read_artifact",
+    "write_output"
+  ],
+  "skills": [],
+  "default_model": "claude-sonnet-5-5",
+  "max_turns": 16,
+  "max_output_tokens": 16000,
+  "inject": [
+    "product_id",
+    "generated_at",
+    "corpus"
+  ]
+}

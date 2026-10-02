@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+"""Set up a local demo workspace with the invented fixture products, ingested, plus sample briefs.
+
+  bin/demo <data-dir>          then: VCE_DATA_DIR=<data-dir> bin/vce serve
+Demo sign-in: admin@example.test with a random password printed at the end (local fixtures only).
+"""
+import os
+import secrets
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DEMO_PASSWORD = secrets.token_urlsafe(12)
+
+if len(sys.argv) != 2:
+    sys.exit(__doc__)
+os.environ["VCE_DATA_DIR"] = sys.argv[1]
+os.environ.setdefault("VCE_ALLOW_PLAINTEXT_EVIDENCE", "1")
+from services import actions, fixtures, orchestrator  # noqa: E402
+from services.api import create_user, set_member, user_by_email  # noqa: E402
+from services.store import Store  # noqa: E402
+
+store = Store()
+if store.list_workspaces():
+    sys.exit(f"{store.root} already has data; pick an empty directory.")
+ws_rec = store.create_workspace("Demo (invented products)", "ws-demo", {"evidence_enabled": True})
+uid = create_user(store, "admin@example.test", DEMO_PASSWORD, "Demo admin")
+set_member(store, ws_rec["id"], uid, ["admin", "editor", "reviewer", "sme", "compliance"])
+ws = store.workspace(ws_rec["id"])
+actor = {"email": "admin@example.test", "roles": ["admin", "editor", "reviewer", "sme", "compliance"]}
+briefs = {
+    "lumen": [("landing-page", "Room-level comfort for facilities teams", "Facilities directors", "Book a demo", "problem-aware", "",
+               [{"where": "H1", "text": "The only climate controller that cuts your heating bill in half"}]),
+              ("email", "Fewer comfort complaints", "Facilities managers", "Book a 20-minute call", "problem-aware", "", [])],
+    "shiftwell": [("one-pager", "Fill open shifts faster", "Clinic and care-home managers", "Book a walkthrough", "solution-aware", "", [])],
+}
+for slug in fixtures.available():
+    fixtures.load(ws, actor, slug)
+    orchestrator.ingest_product(ws, slug)
+    actions.accept_threshold(ws, actor, slug)
+    for ct, title, aud, goal, stage, notes, mw in briefs.get(slug, []):
+        b = actions.create_brief(ws, actor, slug, ct, title, aud, goal, stage, notes, mw)
+        r = orchestrator.content_run(ws, b["id"])
+        print(f"{slug}: {title} -> {r['status']} after {r['rounds']} round(s)")
+print(f"Demo ready in {store.root}.")
+print(f"Sign in as admin@example.test with password: {DEMO_PASSWORD}")
+print("It is shown only once. To reset, delete the data folder and run bin/demo again.")

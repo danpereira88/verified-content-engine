@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "checker-report.schema.json",
+  "title": "checker-report",
+  "type": "object",
+  "properties": {
+    "checker": {
+      "type": "string",
+      "enum": [
+        "style-checker",
+        "best-practice-auditor"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ok",
+        "checker-unavailable"
+      ]
+    },
+    "score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "threshold": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "passed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "severity": {
+            "$ref": "common.schema.json#/$defs/severity"
+          },
+          "issue": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sentence": {
+            "type": "string"
+          },
+          "fix": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "severity",
+          "issue"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "checker",
+    "status",
+    "score",
+    "passed",
+    "flags"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,330 @@
+{
+  "kind": "survey",
+  "collected": "2026-07",
+  "responses": [
+    {
+      "id": "R001",
+      "segment": "outpatient clinics",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "spreadsheets",
+        "quote": "My phone goes at six and my whole morning is gone."
+      }
+    },
+    {
+      "id": "R002",
+      "segment": "residential care homes",
+      "answers": {
+        "top_pain": "chasing cover by phone and text",
+        "current_tool": "paper rota on the wall",
+        "quote": "I ring round the same five people every time."
+      }
+    },
+    {
+      "id": "R003",
+      "segment": "community care teams",
+      "answers": {
+        "top_pain": "rotas take hours to build",
+        "current_tool": "spreadsheets",
+        "quote": "The rota takes me a full afternoon every month."
+      }
+    },
+    {
+      "id": "R004",
+      "segment": "dental and therapy practices",
+      "answers": {
+        "top_pain": "shift swaps nobody recorded",
+        "current_tool": "paper rota on the wall",
+        "quote": "People swap shifts and I find out when the wrong person turns up."
+      }
+    },
+    {
+      "id": "R005",
+      "segment": "outpatient clinics",
+      "answers": {
+        "top_pain": "agency spend on unfilled shifts",
+        "current_tool": "spreadsheets",
+        "quote": "Agency staff cost us a fortune when we cannot fill a gap."
+      }
+    },
+    {
+      "id": "R006",
+      "segment": "residential care homes",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "paper rota on the wall",
+        "quote": "Someone always calls in sick on a Monday early."
+      }
+    },
+    {
+      "id": "R007",
+      "segment": "community care teams",
+      "answers": {
+        "top_pain": "chasing cover by phone and text",
+        "current_tool": "spreadsheets",
+        "quote": "I send a dozen texts and hope someone answers."
+      }
+    },
+    {
+      "id": "R008",
+      "segment": "dental and therapy practices",
+      "answers": {
+        "top_pain": "rotas take hours to build",
+        "current_tool": "paper rota on the wall",
+        "quote": "I rebuild the same spreadsheet every four weeks."
+      }
+    },
+    {
+      "id": "R009",
+      "segment": "outpatient clinics",
+      "answers": {
+        "top_pain": "shift swaps nobody recorded",
+        "current_tool": "spreadsheets",
+        "quote": "Swaps happen in the car park and nobody tells me."
+      }
+    },
+    {
+      "id": "R010",
+      "segment": "residential care homes",
+      "answers": {
+        "top_pain": "agency spend on unfilled shifts",
+        "current_tool": "paper rota on the wall",
+        "quote": "We book agency because it is quicker than ringing round."
+      }
+    },
+    {
+      "id": "R011",
+      "segment": "community care teams",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "spreadsheets",
+        "quote": "I find out about sick calls an hour before the shift."
+      }
+    },
+    {
+      "id": "R012",
+      "segment": "dental and therapy practices",
+      "answers": {
+        "top_pain": "chasing cover by phone and text",
+        "current_tool": "paper rota on the wall",
+        "quote": "Finding cover means scrolling through my contacts half asleep."
+      }
+    },
+    {
+      "id": "R013",
+      "segment": "outpatient clinics",
+      "answers": {
+        "top_pain": "rotas take hours to build",
+        "current_tool": "general-purpose rostering software",
+        "quote": "I copy last month by hand and fix it line by line."
+      }
+    },
+    {
+      "id": "R014",
+      "segment": "residential care homes",
+      "answers": {
+        "top_pain": "shift swaps nobody recorded",
+        "current_tool": "group text messages",
+        "quote": "I cannot tell who swapped with who last week."
+      }
+    },
+    {
+      "id": "R015",
+      "segment": "community care teams",
+      "answers": {
+        "top_pain": "agency spend on unfilled shifts",
+        "current_tool": "general-purpose rostering software",
+        "quote": "The agency bill went up again this quarter."
+      }
+    },
+    {
+      "id": "R016",
+      "segment": "dental and therapy practices",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "group text messages",
+        "quote": "Half my week starts with a text saying someone is not coming in."
+      }
+    },
+    {
+      "id": "R017",
+      "segment": "outpatient clinics",
+      "answers": {
+        "top_pain": "chasing cover by phone and text",
+        "current_tool": "general-purpose rostering software",
+        "quote": "Two people said yes to the same shift last week."
+      }
+    },
+    {
+      "id": "R018",
+      "segment": "residential care homes",
+      "answers": {
+        "top_pain": "rotas take hours to build",
+        "current_tool": "group text messages",
+        "quote": "The rota is out of date the day I print it."
+      }
+    },
+    {
+      "id": "R019",
+      "segment": "community care teams",
+      "answers": {
+        "top_pain": "shift swaps nobody recorded",
+        "current_tool": "spreadsheets",
+        "quote": "The paper rota never shows the swaps."
+      }
+    },
+    {
+      "id": "R020",
+      "segment": "dental and therapy practices",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "paper rota on the wall",
+        "quote": "Night shift sick calls are the worst, there is nobody awake to ask."
+      }
+    },
+    {
+      "id": "R021",
+      "segment": "outpatient clinics",
+      "answers": {
+        "top_pain": "chasing cover by phone and text",
+        "current_tool": "spreadsheets",
+        "quote": "I never know who has already been asked."
+      }
+    },
+    {
+      "id": "R022",
+      "segment": "residential care homes",
+      "answers": {
+        "top_pain": "rotas take hours to build",
+        "current_tool": "paper rota on the wall",
+        "quote": "Checking who has which training takes longer than the rota."
+      }
+    },
+    {
+      "id": "R023",
+      "segment": "community care teams",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "spreadsheets",
+        "quote": "By the time I hear about a sick call it is already too late."
+      }
+    },
+    {
+      "id": "R024",
+      "segment": "dental and therapy practices",
+      "answers": {
+        "top_pain": "chasing cover by phone and text",
+        "current_tool": "paper rota on the wall",
+        "quote": "The group chat is chaos when a shift needs covering."
+      }
+    },
+    {
+      "id": "R025",
+      "segment": "outpatient clinics",
+      "answers": {
+        "top_pain": "rotas take hours to build",
+        "current_tool": "spreadsheets",
+        "quote": "I keep the rota in three different places."
+      }
+    },
+    {
+      "id": "R026",
+      "segment": "residential care homes",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "paper rota on the wall",
+        "quote": "We get two or three sick calls a week and each one is a scramble."
+      }
+    },
+    {
+      "id": "R027",
+      "segment": "community care teams",
+      "answers": {
+        "top_pain": "chasing cover by phone and text",
+        "current_tool": "spreadsheets",
+        "quote": "I call people on their day off and feel bad about it."
+      }
+    },
+    {
+      "id": "R028",
+      "segment": "dental and therapy practices",
+      "answers": {
+        "top_pain": "rotas take hours to build",
+        "current_tool": "paper rota on the wall",
+        "quote": "Every change means reprinting the sheet on the wall."
+      }
+    },
+    {
+      "id": "R029",
+      "segment": "outpatient clinics",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "spreadsheets",
+        "quote": "I dread the phone ringing before seven."
+      }
+    },
+    {
+      "id": "R030",
+      "segment": "residential care homes",
+      "answers": {
+        "top_pain": "chasing cover by phone and text",
+        "current_tool": "paper rota on the wall",
+        "quote": "Nobody replies to the group text until it is too late."
+      }
+    },
+    {
+      "id": "R031",
+      "segment": "community care teams",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "general-purpose rostering software",
+        "quote": "Sick calls on weekends mean I end up covering myself."
+      }
+    },
+    {
+      "id": "R032",
+      "segment": "dental and therapy practices",
+      "answers": {
+        "top_pain": "chasing cover by phone and text",
+        "current_tool": "group text messages",
+        "quote": "Ringing round takes me most of an hour."
+      }
+    },
+    {
+      "id": "R033",
+      "segment": "outpatient clinics",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "general-purpose rostering software",
+        "quote": "The early shift loses someone almost every week."
+      }
+    },
+    {
+      "id": "R034",
+      "segment": "residential care homes",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "group text messages",
+        "quote": "One sick call can knock the whole day out."
+      }
+    },
+    {
+      "id": "R035",
+      "segment": "community care teams",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "general-purpose rostering software",
+        "quote": "I spend breakfast trying to fill a gap."
+      }
+    },
+    {
+      "id": "R036",
+      "segment": "dental and therapy practices",
+      "answers": {
+        "top_pain": "last-minute sick calls",
+        "current_tool": "group text messages",
+        "quote": "Sick calls come in by text, voicemail, anything, so I miss some."
+      }
+    }
+  ]
+}

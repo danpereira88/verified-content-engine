@@ -1,0 +1,31 @@
+{
+  "id": "faq",
+  "name": "FAQ",
+  "length_words": [
+    300,
+    1000
+  ],
+  "sections": [
+    {
+      "id": "title",
+      "name": "Title",
+      "purpose": "FAQ topic",
+      "required": true
+    },
+    {
+      "id": "questions",
+      "name": "Questions",
+      "purpose": "Question and verified answer pairs",
+      "required": true
+    },
+    {
+      "id": "cta",
+      "name": "Next step",
+      "purpose": "Where to learn more",
+      "required": false
+    }
+  ],
+  "checklist": [
+    "Every answer tagged"
+  ]
+}

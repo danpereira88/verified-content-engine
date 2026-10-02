@@ -1,0 +1,105 @@
+{
+  "kind": "gate",
+  "provider": "offline",
+  "computed_at": "2026-10-02T10:10:52Z",
+  "products": {
+    "shiftwell": {
+      "metrics": {
+        "hallucination_catch_rate": 0.9726,
+        "false_block_rate": 0.0909,
+        "untagged_detection_rate": 1.0
+      },
+      "counts": {
+        "hallucination": 73,
+        "should_pass": 33,
+        "untagged": 18
+      },
+      "per_label": {
+        "combined-conclusion": {
+          "n": 3,
+          "blocked": 3
+        },
+        "false": {
+          "n": 18,
+          "blocked": 18
+        },
+        "not-citable": {
+          "n": 15,
+          "blocked": 15
+        },
+        "overstated": {
+          "n": 20,
+          "blocked": 20
+        },
+        "partial": {
+          "n": 17,
+          "blocked": 15
+        },
+        "positioning": {
+          "n": 12,
+          "blocked": 0
+        },
+        "true": {
+          "n": 21,
+          "blocked": 3
+        },
+        "untagged": {
+          "n": 18,
+          "blocked": 18
+        }
+      },
+      "passed": {
+        "hallucination_catch_rate": true,
+        "false_block_rate": true,
+        "untagged_detection_rate": true
+      },
+      "all_passed": true,
+      "skipped_golden": [],
+      "misses": [
+        {
+          "id": "G004",
+          "label": "true",
+          "text": "If a phone goes offline, Shiftwell Mobile keeps showing the last synced rota. [[SHIFT-121]]",
+          "blocked": true,
+          "reasons": [
+            "overstated"
+          ]
+        },
+        {
+          "id": "G010",
+          "label": "true",
+          "text": "If you choose the EU region, your Shiftwell Cloud data is stored in data centers located in Ireland. [[SHIFT-200]]",
+          "blocked": true,
+          "reasons": [
+            "overstated"
+          ]
+        },
+        {
+          "id": "G011",
+          "label": "true",
+          "text": "Locations on Shiftwell release 5.1 or later can allow automatic swap approval. [[SHIFT-164]]",
+          "blocked": true,
+          "reasons": [
+            "partial"
+          ]
+        },
+        {
+          "id": "G033",
+          "label": "partial",
+          "text": "Shiftwell Time Clock accepts a staff PIN, an NFC badge or a fingerprint. [[SHIFT-109]]",
+          "blocked": false,
+          "reasons": []
+        },
+        {
+          "id": "G037",
+          "label": "partial",
+          "text": "Shiftwell posts open-shift alerts to Microsoft Teams, Slack and Google Chat channels on the Enterprise plan. [[SHIFT-054]]",
+          "blocked": false,
+          "reasons": []
+        }
+      ],
+      "tokens": 34462
+    }
+  },
+  "all_passed": true
+}

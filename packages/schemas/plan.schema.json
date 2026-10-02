@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "plan.schema.json",
+  "title": "plan",
+  "type": "object",
+  "properties": {
+    "brief_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "framework": {
+      "type": "string",
+      "minLength": 1
+    },
+    "angle": {
+      "type": "string"
+    },
+    "persona": {
+      "type": "string"
+    },
+    "stage": {
+      "$ref": "common.schema.json#/$defs/stage"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/claim_id"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "purpose",
+          "claim_ids",
+          "notes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "proof_gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "need": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "need",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "mandated_wording_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "style_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "brief_id",
+    "framework",
+    "angle",
+    "persona",
+    "stage",
+    "sections",
+    "proof_gaps",
+    "mandated_wording_notes",
+    "style_notes"
+  ],
+  "additionalProperties": false
+}

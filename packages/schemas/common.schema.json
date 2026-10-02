@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "title": "common",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{0,63}$"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9]{1,15}-[0-9]{3,}$"
+    },
+    "claim_prefix": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9]{1,15}$"
+    },
+    "datetime": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "capability",
+        "integration",
+        "security",
+        "compliance",
+        "metric",
+        "pricing",
+        "competitive",
+        "customer-reference",
+        "availability",
+        "deployment",
+        "limitation",
+        "market-evidence"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "claim_status": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "needs-review",
+        "deprecated"
+      ]
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "truth",
+        "style",
+        "positioning",
+        "evidence"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "high",
+        "low"
+      ]
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "unaware",
+        "problem-aware",
+        "solution-aware",
+        "product-aware",
+        "most-aware"
+      ]
+    },
+    "reason_code": {
+      "type": "string",
+      "enum": [
+        "untagged",
+        "missing-claim",
+        "needs-review",
+        "deprecated",
+        "contradicted",
+        "partial",
+        "overstated",
+        "combined-conclusion",
+        "high-risk-low-confidence",
+        "low-confidence",
+        "tension"
+      ]
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "editor",
+        "reviewer",
+        "sme",
+        "compliance",
+        "admin"
+      ]
+    },
+    "content_status": {
+      "type": "string",
+      "enum": [
+        "blocked",
+        "flagged",
+        "approved",
+        "approved-override",
+        "rejected"
+      ]
+    }
+  }
+}

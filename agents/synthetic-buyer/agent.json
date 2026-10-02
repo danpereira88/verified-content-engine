@@ -1,0 +1,15 @@
+{
+  "role": "synthetic-buyer",
+  "description": "React as the product's buyer persona.",
+  "output_schema": "buyer-reaction",
+  "tools": [
+    "write_output"
+  ],
+  "skills": [
+    "buyer-persona"
+  ],
+  "default_model": "claude-sonnet-5-5",
+  "max_turns": 16,
+  "max_output_tokens": 16000,
+  "inject": []
+}

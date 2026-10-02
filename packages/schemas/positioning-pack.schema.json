@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "positioning-pack.schema.json",
+  "title": "positioning-pack",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "generated_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    },
+    "positioning_statement": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "value_themes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string"
+          },
+          "proof_points": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "has-claim",
+                    "needs-claim"
+                  ]
+                },
+                "claim_ids": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "common.schema.json#/$defs/claim_id"
+                  }
+                }
+              },
+              "required": [
+                "text",
+                "status",
+                "claim_ids"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "name",
+          "message",
+          "proof_points"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "personas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string"
+          },
+          "pains": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "goals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "stage": {
+            "$ref": "common.schema.json#/$defs/stage"
+          }
+        },
+        "required": [
+          "name",
+          "role",
+          "pains",
+          "goals",
+          "stage"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "objections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "response": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "response"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "stages": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "messaging": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "guardrails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rule": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision_quote": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "rule",
+          "decision_id",
+          "decision_quote"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "product_id",
+    "generated_at",
+    "positioning_statement",
+    "category",
+    "alternatives",
+    "value_themes",
+    "personas",
+    "objections",
+    "stages",
+    "messaging",
+    "guardrails"
+  ],
+  "additionalProperties": false
+}

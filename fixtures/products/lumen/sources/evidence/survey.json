@@ -1,0 +1,330 @@
+{
+  "kind": "survey",
+  "collected": "2026-07",
+  "responses": [
+    {
+      "id": "R001",
+      "segment": "office property management",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "programmable thermostats",
+        "quote": "Half my mornings go to hot and cold calls."
+      }
+    },
+    {
+      "id": "R002",
+      "segment": "higher education facilities",
+      "answers": {
+        "top_pain": "no visibility into individual rooms",
+        "current_tool": "traditional BMS",
+        "quote": "I can't be on every floor, so I just guess."
+      }
+    },
+    {
+      "id": "R003",
+      "segment": "healthcare clinics",
+      "answers": {
+        "top_pain": "high heating and cooling bills",
+        "current_tool": "manual walk-arounds",
+        "quote": "We heat empty classrooms every weekend."
+      }
+    },
+    {
+      "id": "R004",
+      "segment": "retail facilities",
+      "answers": {
+        "top_pain": "old equipment that is hard to integrate",
+        "current_tool": "spreadsheet of complaints",
+        "quote": "Our chillers are older than some of my staff."
+      }
+    },
+    {
+      "id": "R005",
+      "segment": "office property management",
+      "answers": {
+        "top_pain": "slow and costly BMS changes",
+        "current_tool": "programmable thermostats",
+        "quote": "The BMS contractor charges us every time we change a schedule."
+      }
+    },
+    {
+      "id": "R006",
+      "segment": "higher education facilities",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "traditional BMS",
+        "quote": "Someone is always too cold on the third floor."
+      }
+    },
+    {
+      "id": "R007",
+      "segment": "healthcare clinics",
+      "answers": {
+        "top_pain": "no visibility into individual rooms",
+        "current_tool": "programmable thermostats",
+        "quote": "The thermostat is in the hallway and tells me nothing about the offices."
+      }
+    },
+    {
+      "id": "R008",
+      "segment": "retail facilities",
+      "answers": {
+        "top_pain": "high heating and cooling bills",
+        "current_tool": "traditional BMS",
+        "quote": "Finance keeps asking why the energy bill went up again."
+      }
+    },
+    {
+      "id": "R009",
+      "segment": "office property management",
+      "answers": {
+        "top_pain": "old equipment that is hard to integrate",
+        "current_tool": "manual walk-arounds",
+        "quote": "Every vendor says we need to replace the boilers first."
+      }
+    },
+    {
+      "id": "R010",
+      "segment": "higher education facilities",
+      "answers": {
+        "top_pain": "slow and costly BMS changes",
+        "current_tool": "spreadsheet of complaints",
+        "quote": "A simple change takes two weeks to get scheduled."
+      }
+    },
+    {
+      "id": "R011",
+      "segment": "healthcare clinics",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "programmable thermostats",
+        "quote": "I hear about a problem only after people are already annoyed."
+      }
+    },
+    {
+      "id": "R012",
+      "segment": "retail facilities",
+      "answers": {
+        "top_pain": "no visibility into individual rooms",
+        "current_tool": "traditional BMS",
+        "quote": "I only know a room is stuffy when someone emails me."
+      }
+    },
+    {
+      "id": "R013",
+      "segment": "office property management",
+      "answers": {
+        "top_pain": "high heating and cooling bills",
+        "current_tool": "programmable thermostats",
+        "quote": "Nobody remembers who set the heating schedule."
+      }
+    },
+    {
+      "id": "R014",
+      "segment": "higher education facilities",
+      "answers": {
+        "top_pain": "old equipment that is hard to integrate",
+        "current_tool": "traditional BMS",
+        "quote": "Our chillers are older than some of my staff."
+      }
+    },
+    {
+      "id": "R015",
+      "segment": "healthcare clinics",
+      "answers": {
+        "top_pain": "slow and costly BMS changes",
+        "current_tool": "manual walk-arounds",
+        "quote": "The BMS contractor charges us every time we change a schedule."
+      }
+    },
+    {
+      "id": "R016",
+      "segment": "retail facilities",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "spreadsheet of complaints",
+        "quote": "The complaints never stop in the shoulder seasons."
+      }
+    },
+    {
+      "id": "R017",
+      "segment": "office property management",
+      "answers": {
+        "top_pain": "no visibility into individual rooms",
+        "current_tool": "programmable thermostats",
+        "quote": "I can't be on every floor, so I just guess."
+      }
+    },
+    {
+      "id": "R018",
+      "segment": "higher education facilities",
+      "answers": {
+        "top_pain": "high heating and cooling bills",
+        "current_tool": "traditional BMS",
+        "quote": "We heat empty classrooms every weekend."
+      }
+    },
+    {
+      "id": "R019",
+      "segment": "healthcare clinics",
+      "answers": {
+        "top_pain": "old equipment that is hard to integrate",
+        "current_tool": "programmable thermostats",
+        "quote": "Every vendor says we need to replace the boilers first."
+      }
+    },
+    {
+      "id": "R020",
+      "segment": "retail facilities",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "traditional BMS",
+        "quote": "Half my mornings go to hot and cold calls."
+      }
+    },
+    {
+      "id": "R021",
+      "segment": "office property management",
+      "answers": {
+        "top_pain": "no visibility into individual rooms",
+        "current_tool": "manual walk-arounds",
+        "quote": "The thermostat is in the hallway and tells me nothing about the offices."
+      }
+    },
+    {
+      "id": "R022",
+      "segment": "higher education facilities",
+      "answers": {
+        "top_pain": "high heating and cooling bills",
+        "current_tool": "spreadsheet of complaints",
+        "quote": "Finance keeps asking why the energy bill went up again."
+      }
+    },
+    {
+      "id": "R023",
+      "segment": "healthcare clinics",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "programmable thermostats",
+        "quote": "Someone is always too cold on the third floor."
+      }
+    },
+    {
+      "id": "R024",
+      "segment": "retail facilities",
+      "answers": {
+        "top_pain": "no visibility into individual rooms",
+        "current_tool": "traditional BMS",
+        "quote": "I only know a room is stuffy when someone emails me."
+      }
+    },
+    {
+      "id": "R025",
+      "segment": "office property management",
+      "answers": {
+        "top_pain": "high heating and cooling bills",
+        "current_tool": "programmable thermostats",
+        "quote": "Nobody remembers who set the heating schedule."
+      }
+    },
+    {
+      "id": "R026",
+      "segment": "higher education facilities",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "traditional BMS",
+        "quote": "I hear about a problem only after people are already annoyed."
+      }
+    },
+    {
+      "id": "R027",
+      "segment": "healthcare clinics",
+      "answers": {
+        "top_pain": "no visibility into individual rooms",
+        "current_tool": "manual walk-arounds",
+        "quote": "I can't be on every floor, so I just guess."
+      }
+    },
+    {
+      "id": "R028",
+      "segment": "retail facilities",
+      "answers": {
+        "top_pain": "high heating and cooling bills",
+        "current_tool": "spreadsheet of complaints",
+        "quote": "We heat empty classrooms every weekend."
+      }
+    },
+    {
+      "id": "R029",
+      "segment": "office property management",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "programmable thermostats",
+        "quote": "The complaints never stop in the shoulder seasons."
+      }
+    },
+    {
+      "id": "R030",
+      "segment": "higher education facilities",
+      "answers": {
+        "top_pain": "no visibility into individual rooms",
+        "current_tool": "traditional BMS",
+        "quote": "The thermostat is in the hallway and tells me nothing about the offices."
+      }
+    },
+    {
+      "id": "R031",
+      "segment": "healthcare clinics",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "programmable thermostats",
+        "quote": "Half my mornings go to hot and cold calls."
+      }
+    },
+    {
+      "id": "R032",
+      "segment": "retail facilities",
+      "answers": {
+        "top_pain": "no visibility into individual rooms",
+        "current_tool": "traditional BMS",
+        "quote": "I only know a room is stuffy when someone emails me."
+      }
+    },
+    {
+      "id": "R033",
+      "segment": "office property management",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "manual walk-arounds",
+        "quote": "Someone is always too cold on the third floor."
+      }
+    },
+    {
+      "id": "R034",
+      "segment": "higher education facilities",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "spreadsheet of complaints",
+        "quote": "I hear about a problem only after people are already annoyed."
+      }
+    },
+    {
+      "id": "R035",
+      "segment": "healthcare clinics",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "programmable thermostats",
+        "quote": "The complaints never stop in the shoulder seasons."
+      }
+    },
+    {
+      "id": "R036",
+      "segment": "retail facilities",
+      "answers": {
+        "top_pain": "comfort complaints",
+        "current_tool": "traditional BMS",
+        "quote": "Half my mornings go to hot and cold calls."
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ruling.schema.json",
+  "title": "ruling",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "workspace_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "target_kind": {
+      "type": "string",
+      "enum": [
+        "claim",
+        "conflict"
+      ]
+    },
+    "target_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "rejected",
+        "deprioritized",
+        "doc-wrong",
+        "conflict-resolved"
+      ]
+    },
+    "note": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    },
+    "quote_hash": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "common.schema.json#/$defs/sha256"
+        }
+      ]
+    },
+    "keep_claim_id": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "common.schema.json#/$defs/claim_id"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "workspace_id",
+    "target_kind",
+    "target_id",
+    "kind",
+    "note",
+    "author",
+    "created_at"
+  ],
+  "additionalProperties": false
+}

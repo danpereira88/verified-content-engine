@@ -1,0 +1,44 @@
+{
+  "id": "one-pager",
+  "name": "One-pager",
+  "length_words": [
+    300,
+    600
+  ],
+  "sections": [
+    {
+      "id": "headline",
+      "name": "Headline",
+      "purpose": "Single-line value statement",
+      "required": true
+    },
+    {
+      "id": "summary",
+      "name": "Summary",
+      "purpose": "Two-sentence overview",
+      "required": true
+    },
+    {
+      "id": "capabilities",
+      "name": "Key capabilities",
+      "purpose": "Three to five verified capabilities",
+      "required": true
+    },
+    {
+      "id": "proof",
+      "name": "Proof",
+      "purpose": "Verified evidence",
+      "required": false
+    },
+    {
+      "id": "cta",
+      "name": "Next step",
+      "purpose": "Contact or demo",
+      "required": true
+    }
+  ],
+  "checklist": [
+    "Fits one page",
+    "Scannable bullets"
+  ]
+}

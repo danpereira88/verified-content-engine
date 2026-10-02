@@ -1,0 +1,33 @@
+{
+  "slug": "lumen",
+  "name": "Lumen Hub",
+  "company": "Northwind Devices",
+  "claim_prefix": "LUMEN",
+  "content_types": ["landing-page", "one-pager", "email", "blog-post", "faq", "release-note"],
+  "high_risk_categories": ["compliance", "metric", "pricing", "competitive", "customer-reference", "market-evidence"],
+  "buyer_persona": {
+    "name": "Ilse Varga",
+    "role": "Director of facilities for a portfolio of 14 mid-sized office and clinic buildings",
+    "priorities": [
+      "Cut comfort complaints across all sites",
+      "Lower HVAC energy spend without replacing equipment",
+      "Pass the corporate IT security review on the first attempt",
+      "Keep installation disruption to evenings and weekends"
+    ],
+    "objections": [
+      "What will this cost per building, including sensors and installation?",
+      "Which buildings like ours already run it? I want to call a reference.",
+      "Is the platform ISO 27001 certified? Our IT team requires it.",
+      "Our chillers are fifteen years old. Will it actually talk to them?",
+      "What happens to the building if your cloud goes down?"
+    ],
+    "language": [
+      "hot and cold calls",
+      "I can't be on every floor",
+      "the BMS guy charges us every time",
+      "show me the energy numbers",
+      "IT will want a security pack",
+      "one screen for all my sites"
+    ]
+  }
+}

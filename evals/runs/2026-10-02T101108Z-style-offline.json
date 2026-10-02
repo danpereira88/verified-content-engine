@@ -1,0 +1,33 @@
+{
+  "kind": "style",
+  "provider": "offline",
+  "computed_at": "2026-10-02T10:11:08Z",
+  "products": {
+    "lumen": {
+      "auc": 0.9679,
+      "recommended_threshold": 0.74,
+      "youden_j": 0.875,
+      "on_brand": 12,
+      "off_brand": 48,
+      "on_mean": 0.866,
+      "off_mean": 0.566,
+      "target_auc": 0.9,
+      "meets_target": true,
+      "scorer": "deterministic-style-score",
+      "computed_at": "2026-10-02T10:11:08Z"
+    },
+    "shiftwell": {
+      "auc": 1.0,
+      "recommended_threshold": 0.811,
+      "youden_j": 1.0,
+      "on_brand": 14,
+      "off_brand": 56,
+      "on_mean": 0.916,
+      "off_mean": 0.58,
+      "target_auc": 0.9,
+      "meets_target": true,
+      "scorer": "deterministic-style-score",
+      "computed_at": "2026-10-02T10:11:08Z"
+    }
+  }
+}

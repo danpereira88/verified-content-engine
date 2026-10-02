@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "style-profile.schema.json",
+  "title": "style-profile",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "active"
+      ]
+    },
+    "generated_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    },
+    "voice": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "traits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "summary",
+        "traits"
+      ],
+      "additionalProperties": false
+    },
+    "cadence": {
+      "type": "object",
+      "properties": {
+        "avg_sentence_words": {
+          "type": "number"
+        },
+        "sentence_words_p10": {
+          "type": "number"
+        },
+        "sentence_words_p90": {
+          "type": "number"
+        },
+        "avg_paragraph_sentences": {
+          "type": "number"
+        },
+        "question_rate": {
+          "type": "number"
+        },
+        "second_person_rate": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "avg_sentence_words",
+        "sentence_words_p10",
+        "sentence_words_p90",
+        "avg_paragraph_sentences",
+        "question_rate",
+        "second_person_rate"
+      ],
+      "additionalProperties": false
+    },
+    "vocabulary": {
+      "type": "object",
+      "properties": {
+        "preferred": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "banned": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "preferred",
+        "avoid",
+        "banned"
+      ],
+      "additionalProperties": false
+    },
+    "naming": {
+      "type": "object",
+      "properties": {
+        "product_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variants_allowed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "product_name",
+        "variants_allowed",
+        "forbidden"
+      ],
+      "additionalProperties": false
+    },
+    "formatting": {
+      "type": "object",
+      "properties": {
+        "heading_case": {
+          "type": "string",
+          "enum": [
+            "sentence",
+            "title",
+            "mixed"
+          ]
+        },
+        "list_style": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "heading_case",
+        "list_style",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "rubric": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "weight": {
+            "type": "number"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "criterion",
+          "weight",
+          "description"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "threshold": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "consistency": {
+      "type": "object",
+      "properties": {
+        "ok": {
+          "type": "boolean"
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "ok",
+        "issues"
+      ],
+      "additionalProperties": false
+    },
+    "corpus": {
+      "type": "object",
+      "properties": {
+        "pieces": {
+          "type": "integer"
+        },
+        "words": {
+          "type": "integer"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          }
+        }
+      },
+      "required": [
+        "pieces",
+        "words",
+        "source_ids"
+      ],
+      "additionalProperties": false
+    },
+    "derived_from_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "decision_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rule": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "decision_id",
+          "rule"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "product_id",
+    "status",
+    "generated_at",
+    "voice",
+    "cadence",
+    "vocabulary",
+    "naming",
+    "formatting",
+    "rubric",
+    "threshold",
+    "consistency",
+    "corpus",
+    "derived_from_decisions"
+  ],
+  "additionalProperties": false
+}

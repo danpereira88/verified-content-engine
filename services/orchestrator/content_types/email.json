@@ -1,0 +1,38 @@
+{
+  "id": "email",
+  "name": "Email",
+  "length_words": [
+    80,
+    220
+  ],
+  "sections": [
+    {
+      "id": "subject",
+      "name": "Subject line",
+      "purpose": "Short and specific",
+      "required": true
+    },
+    {
+      "id": "opening",
+      "name": "Opening",
+      "purpose": "Lead with the reader's problem",
+      "required": true
+    },
+    {
+      "id": "value",
+      "name": "Value",
+      "purpose": "One or two verified facts",
+      "required": true
+    },
+    {
+      "id": "cta",
+      "name": "Ask",
+      "purpose": "One low-friction ask",
+      "required": true
+    }
+  ],
+  "checklist": [
+    "Under 150 words in the body",
+    "One ask"
+  ]
+}

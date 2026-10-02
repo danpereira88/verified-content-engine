@@ -1,0 +1,43 @@
+{
+  "id": "blog-post",
+  "name": "Blog post",
+  "length_words": [
+    700,
+    1600
+  ],
+  "sections": [
+    {
+      "id": "title",
+      "name": "Title",
+      "purpose": "Specific promise",
+      "required": true
+    },
+    {
+      "id": "intro",
+      "name": "Introduction",
+      "purpose": "Hook and context",
+      "required": true
+    },
+    {
+      "id": "body",
+      "name": "Body",
+      "purpose": "Teach the topic with verified facts",
+      "required": true
+    },
+    {
+      "id": "product",
+      "name": "Where the product fits",
+      "purpose": "Bridge to the product",
+      "required": false
+    },
+    {
+      "id": "conclusion",
+      "name": "Conclusion",
+      "purpose": "Summary and next step",
+      "required": true
+    }
+  ],
+  "checklist": [
+    "Teaches before it sells"
+  ]
+}

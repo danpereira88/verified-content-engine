@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "content-item.schema.json",
+  "title": "content-item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "product_id",
+    "brief_id",
+    "status",
+    "live_version",
+    "rounds",
+    "auto_revisions_used",
+    "human_rounds",
+    "review_state",
+    "reflags",
+    "positioning_marks",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "product_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "brief_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "running",
+        "blocked",
+        "flagged",
+        "approved",
+        "approved-override",
+        "rejected",
+        "failed"
+      ]
+    },
+    "live_version": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "round",
+            "status",
+            "final_ref",
+            "report_ref",
+            "cited_ids",
+            "approved_at"
+          ],
+          "properties": {
+            "round": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "approved",
+                "approved-override",
+                "flagged"
+              ]
+            },
+            "final_ref": {
+              "type": "string"
+            },
+            "report_ref": {
+              "type": "string"
+            },
+            "cited_ids": {
+              "type": "array",
+              "items": {
+                "$ref": "common.schema.json#/$defs/claim_id"
+              }
+            },
+            "approved_at": {
+              "$ref": "common.schema.json#/$defs/datetime"
+            }
+          }
+        }
+      ]
+    },
+    "rounds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "round",
+          "kind",
+          "draft_ref",
+          "status",
+          "created_at"
+        ],
+        "properties": {
+          "round": {
+            "type": "integer"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "initial",
+              "auto",
+              "human-directed",
+              "edit"
+            ]
+          },
+          "draft_ref": {
+            "type": "string"
+          },
+          "plan_ref": {
+            "type": "string"
+          },
+          "report_ref": {
+            "type": "string"
+          },
+          "checks_ref": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "block_count": {
+            "type": "integer"
+          },
+          "instructions": {
+            "type": "string"
+          },
+          "by": {
+            "type": "string"
+          },
+          "created_at": {
+            "$ref": "common.schema.json#/$defs/datetime"
+          },
+          "run_id": {
+            "type": "string"
+          },
+          "purged": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "auto_revisions_used": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2
+    },
+    "human_rounds": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "review_state": {
+      "type": "string",
+      "enum": [
+        "none",
+        "open",
+        "closed"
+      ]
+    },
+    "reflags": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "positioning_marks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sentence",
+          "by",
+          "at"
+        ],
+        "properties": {
+          "sentence": {
+            "type": "string"
+          },
+          "by": {
+            "type": "string"
+          },
+          "at": {
+            "$ref": "common.schema.json#/$defs/datetime"
+          }
+        }
+      }
+    },
+    "override": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "updated_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "landing-page",
+  "name": "Landing page",
+  "length_words": [
+    500,
+    1200
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "purpose": "Headline and subhead that meet the reader at their awareness stage",
+      "required": true
+    },
+    {
+      "id": "problem",
+      "name": "Problem",
+      "purpose": "Name the reader's pain in their language",
+      "required": true
+    },
+    {
+      "id": "solution",
+      "name": "How it works",
+      "purpose": "Explain the product's approach",
+      "required": true
+    },
+    {
+      "id": "benefits",
+      "name": "Benefits",
+      "purpose": "Three outcomes, each backed by verified claims",
+      "required": true
+    },
+    {
+      "id": "proof",
+      "name": "Proof",
+      "purpose": "Verified evidence: metrics, security, compliance",
+      "required": false
+    },
+    {
+      "id": "faq",
+      "name": "FAQ",
+      "purpose": "Answer the main objections",
+      "required": false
+    },
+    {
+      "id": "cta",
+      "name": "Call to action",
+      "purpose": "One clear next step",
+      "required": true
+    }
+  ],
+  "checklist": [
+    "One primary CTA",
+    "Headline matches awareness stage",
+    "Every factual line tagged"
+  ]
+}

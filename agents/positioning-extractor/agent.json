@@ -1,0 +1,18 @@
+{
+  "role": "positioning-extractor",
+  "description": "Build the positioning pack from positioning sources and decisions.",
+  "output_schema": "positioning-pack",
+  "tools": [
+    "read_artifact",
+    "search_registry",
+    "write_output"
+  ],
+  "skills": [],
+  "default_model": "claude-sonnet-5-5",
+  "max_turns": 16,
+  "max_output_tokens": 16000,
+  "inject": [
+    "product_id",
+    "generated_at"
+  ]
+}

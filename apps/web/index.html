@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verified Content Engine</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="signin" class="signin" hidden>
+    <form id="signin-form" class="signin-card" novalidate>
+      <div class="brand brand-lg"><span class="brand-mark" aria-hidden="true">V</span> Verified Content Engine</div>
+      <p class="muted">Sign in to your workspace.</p>
+      <label class="field">
+        <span>Email</span>
+        <input type="email" name="email" autocomplete="username" required>
+      </label>
+      <label class="field">
+        <span>Password</span>
+        <input type="password" name="password" autocomplete="current-password" required>
+      </label>
+      <label class="field">
+        <span>Workspace ID <em class="muted">(optional)</em></span>
+        <input type="text" name="workspace_id" autocomplete="off" placeholder="ws-…">
+      </label>
+      <p id="signin-error" class="form-error" role="alert"></p>
+      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+    </form>
+  </div>
+
+  <div id="app" class="app" hidden>
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">V</span> Verified Content Engine</div>
+      <label class="product-picker">
+        <span class="sr-only">Product</span>
+        <select id="product-picker" aria-label="Current product"></select>
+      </label>
+      <div class="topbar-right">
+        <span id="ws-name" class="muted"></span>
+        <span id="user-email" class="user-chip"></span>
+        <button type="button" class="btn btn-ghost btn-sm" data-action="logout">Sign out</button>
+      </div>
+    </header>
+    <div class="shell">
+      <nav class="sidenav" aria-label="Main">
+        <a href="#/products" data-nav="products">Products</a>
+        <a href="#/sources" data-nav="sources">Sources</a>
+        <a href="#/claims" data-nav="claims">Claims</a>
+        <a href="#/decisions" data-nav="decisions">Decisions</a>
+        <a href="#/style" data-nav="style">Style &amp; positioning</a>
+        <div class="nav-sep" role="separator"></div>
+        <a href="#/create" data-nav="create">Create</a>
+        <a href="#/review" data-nav="review">Review</a>
+        <div class="nav-sep" role="separator"></div>
+        <a href="#/gaps" data-nav="gaps">Gaps</a>
+        <a href="#/quality" data-nav="quality">Quality &amp; cost</a>
+        <a href="#/settings" data-nav="settings">Settings</a>
+      </nav>
+      <main id="main" class="main" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

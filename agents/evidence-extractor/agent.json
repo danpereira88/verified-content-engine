@@ -1,0 +1,16 @@
+{
+  "role": "evidence-extractor",
+  "description": "Market-evidence claims with reproducible counts, and buyer language.",
+  "output_schema": "market-evidence",
+  "tools": [
+    "read_artifact",
+    "write_output"
+  ],
+  "skills": [],
+  "default_model": "claude-sonnet-5-5",
+  "max_turns": 16,
+  "max_output_tokens": 16000,
+  "inject": [
+    "source_id"
+  ]
+}

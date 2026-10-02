@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+# local data (sources, claims, drafts) never belongs in the repo
+.vce/
+data/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+.env
+.claude/launch.json

@@ -1,0 +1,37 @@
+{
+  "id": "release-note",
+  "name": "Release note",
+  "length_words": [
+    100,
+    500
+  ],
+  "sections": [
+    {
+      "id": "title",
+      "name": "Title",
+      "purpose": "What shipped",
+      "required": true
+    },
+    {
+      "id": "summary",
+      "name": "Summary",
+      "purpose": "What changed and why it matters",
+      "required": true
+    },
+    {
+      "id": "details",
+      "name": "Details",
+      "purpose": "Verified specifics, versions and conditions",
+      "required": true
+    },
+    {
+      "id": "availability",
+      "name": "Availability",
+      "purpose": "Who gets it and when",
+      "required": true
+    }
+  ],
+  "checklist": [
+    "Versions and conditions kept exactly"
+  ]
+}

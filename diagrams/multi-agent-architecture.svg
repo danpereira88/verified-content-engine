@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 1230" width="1900" height="1230" font-family="Helvetica, Arial, sans-serif"><defs><marker id="ah-343a40" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#343a40"/></marker><marker id="ahs-343a40" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#343a40"/></marker><marker id="ah-7048e8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7048e8"/></marker><marker id="ahs-7048e8" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#7048e8"/></marker><marker id="ah-2f9e44" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2f9e44"/></marker><marker id="ahs-2f9e44" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#2f9e44"/></marker><marker id="ah-495057" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#495057"/></marker><marker id="ahs-495057" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#495057"/></marker><marker id="ah-e03131" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e03131"/></marker><marker id="ahs-e03131" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#e03131"/></marker><marker id="ah-c2255c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c2255c"/></marker><marker id="ahs-c2255c" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#c2255c"/></marker></defs><rect width="1900" height="1230" fill="#ffffff"/><text x="40" y="54" font-size="28" font-weight="bold" fill="#1e1e1e">Verified Content Engine — multi-agent architecture</text>
+<text x="40" y="81.0" font-size="15" fill="#495057" font-style="italic">Orchestrator-worker, with sequential handoffs where steps depend on each other and parallel fan-out where they don&#x27;t. Models propose; code decides.</text>
+<rect x="40" y="130" width="300" height="130" rx="10" fill="#ffdeeb" stroke="#c2255c" stroke-width="2"/>
+<text x="190.0" y="163.5" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">People (Web UI → API)</text>
+<text x="190.0" y="181.7" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">marketer · reviewer · SME</text>
+<text x="190.0" y="199.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">compliance · admin</text>
+<text x="190.0" y="218.1" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">only humans rule, override,</text>
+<text x="190.0" y="236.3" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">approve, export</text>
+<rect x="380" y="110" width="1480" height="350" rx="14" fill="none" stroke="#1971c2" stroke-width="2" stroke-dasharray="10 7"/>
+<text x="396" y="140" font-size="18" font-weight="bold" fill="#1971c2">1 · INGESTION  —  parallel fan-out by source type</text>
+<rect x="410" y="230" width="200" height="100" rx="10" fill="#d3f9d8" stroke="#2f9e44" stroke-width="2"/>
+<text x="510.0" y="266.7" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">ingest service (code)</text>
+<text x="510.0" y="284.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">snapshot · sha256</text>
+<text x="510.0" y="303.1" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">manifest · staleness</text>
+<rect x="680" y="160" width="270" height="58" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="815.0" y="185.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">claims-extractor</text>
+<text x="815.0" y="202.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">truth sources → cited claims</text>
+<rect x="680" y="230" width="270" height="58" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="815.0" y="255.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">style-extractor</text>
+<text x="815.0" y="272.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">style sources → voice profile</text>
+<rect x="680" y="300" width="270" height="58" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="815.0" y="325.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">positioning-extractor</text>
+<text x="815.0" y="342.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">positioning + decisions → pack</text>
+<rect x="680" y="370" width="270" height="58" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="815.0" y="395.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">evidence-extractor (optional)</text>
+<text x="815.0" y="412.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">calls/surveys → market evidence</text>
+<rect x="1020" y="230" width="230" height="100" rx="10" fill="#d3f9d8" stroke="#2f9e44" stroke-width="2"/>
+<text x="1135.0" y="266.7" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">registry.build + validate</text>
+<text x="1135.0" y="284.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">(code)</text>
+<text x="1135.0" y="303.1" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">IDs · rulings · conflicts</text>
+<rect x="1320" y="160" width="260" height="200" rx="10" fill="#e9ecef" stroke="#495057" stroke-width="2"/>
+<text x="1450.0" y="210.3" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">Knowledge base</text>
+<text x="1450.0" y="228.5" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">(per product, versioned)</text>
+<text x="1450.0" y="246.7" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal"></text>
+<text x="1450.0" y="264.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">• claims registry</text>
+<text x="1450.0" y="283.1" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">• style profile + threshold</text>
+<text x="1450.0" y="301.3" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">• positioning pack</text>
+<text x="1450.0" y="319.5" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">• decisions log</text>
+<rect x="1620" y="230" width="220" height="110" rx="10" fill="#ffdeeb" stroke="#c2255c" stroke-width="2"/>
+<text x="1730.0" y="264.2" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">SME review queue</text>
+<text x="1730.0" y="281.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">confirm · reject</text>
+<text x="1730.0" y="298.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">deprioritize · doc-wrong</text>
+<text x="1730.0" y="314.9" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">rule on conflicts</text>
+<polyline points="340,195.0 375,195 375,280 410,280.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="410,280.0 399.2,285.2 399.2,274.8" fill="#343a40"/>
+<text x="250" y="283.0" font-size="13" fill="#495057" font-style="italic">upload /</text>
+<text x="250" y="299.9" font-size="13" fill="#495057" font-style="italic">import docs</text>
+<polyline points="610,280.0 645,280 645,189 680,189.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="680,189.0 669.2,194.2 669.2,183.8" fill="#343a40"/>
+<polyline points="950,189.0 985,189 985,280 1020,280.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1020,280.0 1009.2,285.2 1009.2,274.8" fill="#343a40"/>
+<polyline points="610,280.0 645,280 645,259 680,259.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="680,259.0 669.2,264.2 669.2,253.8" fill="#343a40"/>
+<polyline points="950,259.0 985,259 985,280 1020,280.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1020,280.0 1009.2,285.2 1009.2,274.8" fill="#343a40"/>
+<polyline points="610,280.0 645,280 645,329 680,329.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="680,329.0 669.2,334.2 669.2,323.8" fill="#343a40"/>
+<polyline points="950,329.0 985,329 985,280 1020,280.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1020,280.0 1009.2,285.2 1009.2,274.8" fill="#343a40"/>
+<polyline points="610,280.0 645,280 645,399 680,399.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="680,399.0 669.2,404.2 669.2,393.8" fill="#343a40"/>
+<polyline points="950,399.0 985,399 985,280 1020,280.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1020,280.0 1009.2,285.2 1009.2,274.8" fill="#343a40"/>
+<text x="620" y="445.0" font-size="13" fill="#1971c2" font-style="italic">fan-out: one extractor per source type, one record per file, run in parallel</text>
+<polyline points="1250,280.0 1320,260.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1320,260.0 1311.0,268.0 1308.2,257.9" fill="#343a40"/>
+<polyline points="1580,260.0 1600,260 1600,285 1620,285.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1620,285.0 1609.2,290.2 1609.2,279.8" fill="#343a40"/>
+<polygon points="1580,260.0 1590.8,254.8 1590.8,265.2" fill="#343a40"/>
+<text x="1625" y="363.0" font-size="13" fill="#495057" font-style="italic">needs-review ⇄ rulings</text>
+<rect x="40" y="490" width="1820" height="600" rx="14" fill="none" stroke="#e67700" stroke-width="2" stroke-dasharray="10 7"/>
+<text x="56" y="520" font-size="18" font-weight="bold" fill="#e67700">2 · CONTENT RUN  —  orchestrator-worker · sequential handoffs · parallel verification</text>
+<rect x="300" y="540" width="1540" height="52" rx="10" fill="#fff3bf" stroke="#e67700" stroke-width="2"/>
+<text x="1070.0" y="570.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">ORCHESTRATOR (code)  —  dispatches every step below · per-run budget · revision cap = 2 · retry once · resume from last step · calls gate code for every decision</text>
+<rect x="70" y="620" width="190" height="90" rx="10" fill="#ffdeeb" stroke="#c2255c" stroke-width="2"/>
+<text x="165.0" y="651.7" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">Brief (human)</text>
+<text x="165.0" y="669.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">type · audience</text>
+<text x="165.0" y="688.1" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="normal">goal · stage</text>
+<rect x="300" y="630" width="200" height="80" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="400.0" y="657.6" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">strategist</text>
+<text x="400.0" y="674.5" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">plan · claims per section</text>
+<text x="400.0" y="691.4" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">proof gaps</text>
+<rect x="560" y="630" width="200" height="80" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="660.0" y="657.6" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">copywriter</text>
+<text x="660.0" y="674.5" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">tagged draft</text>
+<text x="660.0" y="691.4" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">+ claim map</text>
+<rect x="840" y="615" width="260" height="58" rx="10" fill="#ffe3e3" stroke="#e03131" stroke-width="3"/>
+<text x="970.0" y="640.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">verifier — THE GATE</text>
+<text x="970.0" y="657.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">per-sentence verdicts</text>
+<rect x="840" y="685" width="260" height="58" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="970.0" y="710.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">style-checker</text>
+<text x="970.0" y="727.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">score vs threshold</text>
+<rect x="840" y="755" width="260" height="58" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="970.0" y="780.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">best-practice-auditor</text>
+<text x="970.0" y="797.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">structure · positioning · stage</text>
+<rect x="840" y="825" width="260" height="58" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="970.0" y="850.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">synthetic-buyer (optional)</text>
+<text x="970.0" y="867.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">reaction · objections</text>
+<rect x="1170" y="690" width="220" height="100" rx="10" fill="#d3f9d8" stroke="#2f9e44" stroke-width="2"/>
+<text x="1280.0" y="719.2" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">gate.combine (code)</text>
+<text x="1280.0" y="736.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">any block → Blocked</text>
+<text x="1280.0" y="753.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">high flag → Flagged</text>
+<text x="1280.0" y="769.9" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">else → Approved</text>
+<rect x="1470" y="620" width="220" height="80" rx="10" fill="#d3f9d8" stroke="#2f9e44" stroke-width="2"/>
+<text x="1580.0" y="647.6" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">gate.finalize (code)</text>
+<text x="1580.0" y="664.5" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">strip tags → export</text>
+<text x="1580.0" y="681.4" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">Approved only</text>
+<rect x="1470" y="760" width="370" height="120" rx="10" fill="#ffdeeb" stroke="#c2255c" stroke-width="2"/>
+<text x="1655.0" y="790.8" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">Human review queue</text>
+<text x="1655.0" y="807.6" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">edit → re-verify · direct a revision</text>
+<text x="1655.0" y="824.5" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">add a source (enters needs-review)</text>
+<text x="1655.0" y="841.5" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">override (written reason → approved-override)</text>
+<text x="1655.0" y="858.4" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">reject</text>
+<polyline points="40,195.0 22,195 22,665 70,665.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="70,665.0 59.2,670.2 59.2,659.8" fill="#343a40"/>
+<polyline points="260,665.0 300,670.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="300,670.0 288.6,673.8 289.9,663.5" fill="#343a40"/>
+<polyline points="500,670.0 560,670.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="560,670.0 549.2,675.2 549.2,664.8" fill="#343a40"/>
+<text x="512" y="658.0" font-size="13" fill="#495057" font-style="italic">plan</text>
+<polyline points="760,670.0 800,670 800,644 840,644.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="840,644.0 829.2,649.2 829.2,638.8" fill="#343a40"/>
+<polyline points="1100,644.0 1135,644 1135,740 1170,740.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1170,740.0 1159.2,745.2 1159.2,734.8" fill="#343a40"/>
+<polyline points="760,670.0 800,670 800,714 840,714.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="840,714.0 829.2,719.2 829.2,708.8" fill="#343a40"/>
+<polyline points="1100,714.0 1135,714 1135,740 1170,740.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1170,740.0 1159.2,745.2 1159.2,734.8" fill="#343a40"/>
+<polyline points="760,670.0 800,670 800,784 840,784.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="840,784.0 829.2,789.2 829.2,778.8" fill="#343a40"/>
+<polyline points="1100,784.0 1135,784 1135,740 1170,740.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1170,740.0 1159.2,745.2 1159.2,734.8" fill="#343a40"/>
+<polyline points="760,670.0 800,670 800,854 840,854.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="840,854.0 829.2,859.2 829.2,848.8" fill="#343a40"/>
+<polyline points="1100,854.0 1135,854 1135,740 1170,740.0" fill="none" stroke="#343a40" stroke-width="2"/>
+<polygon points="1170,740.0 1159.2,745.2 1159.2,734.8" fill="#343a40"/>
+<text x="1145" y="613.0" font-size="13" fill="#e67700" font-style="italic">fan-out: 4 independent reads</text>
+<text x="1145" y="629.9" font-size="13" fill="#e67700" font-style="italic">of the same draft</text>
+<text x="1145" y="646.8" font-size="13" fill="#e67700" font-style="italic">join: wait for all, then combine</text>
+<polyline points="1390,740.0 1430,740 1430,660 1470,660.0" fill="none" stroke="#2f9e44" stroke-width="2"/>
+<polygon points="1470,660.0 1459.2,665.2 1459.2,654.8" fill="#2f9e44"/>
+<text x="1395" y="715.0" font-size="13" fill="#495057" font-style="italic">Approved</text>
+<polyline points="1390,740.0 1430,740 1430,820 1470,820.0" fill="none" stroke="#c2255c" stroke-width="2"/>
+<polygon points="1470,820.0 1459.2,825.2 1459.2,814.8" fill="#c2255c"/>
+<text x="1395" y="848.0" font-size="13" fill="#495057" font-style="italic">after 2 auto</text>
+<text x="1395" y="864.9" font-size="13" fill="#495057" font-style="italic">rounds</text>
+<polyline points="1280.0,790 1280,930 710,930 710.0,710" fill="none" stroke="#e03131" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="710.0,710 715.2,720.8 704.8,720.8" fill="#e03131"/>
+<text x="722" y="949.0" font-size="13" fill="#495057" font-style="italic">Blocked / Flagged and rounds &lt; 2 →</text>
+<text x="722" y="965.9" font-size="13" fill="#495057" font-style="italic">copywriter revises, whole page re-verified</text>
+<polyline points="1450.0,360 1450.0,540" fill="none" stroke="#495057" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="1450.0,540 1444.8,529.2 1455.2,529.2" fill="#495057"/>
+<text x="1462" y="381.0" font-size="13" fill="#495057" font-style="italic">read-only context slices</text>
+<text x="1462" y="397.9" font-size="13" fill="#495057" font-style="italic">(registry · profile · pack)</text>
+<rect x="300" y="990" width="460" height="70" rx="10" fill="#e5dbff" stroke="#7048e8" stroke-width="2"/>
+<text x="530.0" y="1021.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">skills: conversion-copywriter · copy frameworks</text>
+<text x="530.0" y="1038.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">shape structure &amp; tone only — facts come from the registry</text>
+<rect x="840" y="990" width="380" height="70" rx="10" fill="#e5dbff" stroke="#7048e8" stroke-width="2"/>
+<text x="1030.0" y="1021.1" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="bold">skills: positioning-auditor · awareness-scorer</text>
+<text x="1030.0" y="1038.0" font-size="13" fill="#1e1e1e" text-anchor="middle" font-weight="normal">buyer-persona (for synthetic-buyer)</text>
+<polyline points="610.0,990 610.0,710" fill="none" stroke="#7048e8" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="610.0,710 615.2,720.8 604.8,720.8" fill="#7048e8"/>
+<polyline points="400.0,990 400.0,710" fill="none" stroke="#7048e8" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="400.0,710 405.2,720.8 394.8,720.8" fill="#7048e8"/>
+<polyline points="970.0,990 970.0,883" fill="none" stroke="#7048e8" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="970.0,883 975.2,893.8 964.8,893.8" fill="#7048e8"/>
+<rect x="1290" y="960" width="550" height="115" rx="10" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<text x="1300" y="988.2" font-size="13" fill="#1e1e1e" text-anchor="start" font-weight="bold">Failure handling</text>
+<text x="1300" y="1005.1" font-size="13" fill="#1e1e1e" text-anchor="start" font-weight="normal">• agent crash / stall → retry once → fail loud with context, resume later</text>
+<text x="1300" y="1022.0" font-size="13" fill="#1e1e1e" text-anchor="start" font-weight="normal">• schema-invalid output = failed step</text>
+<text x="1300" y="1039.0" font-size="13" fill="#1e1e1e" text-anchor="start" font-weight="normal">• budget reached → clean stop, partial run saved</text>
+<text x="1300" y="1055.8" font-size="13" fill="#1e1e1e" text-anchor="start" font-weight="normal">• failed revision of approved copy → last approved version stays live</text>
+<rect x="40" y="1120" width="180" height="40" rx="10" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+<text x="130.0" y="1144.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">LLM agent</text>
+<rect x="240" y="1120" width="180" height="40" rx="10" fill="#d3f9d8" stroke="#2f9e44" stroke-width="2"/>
+<text x="330.0" y="1144.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">deterministic code</text>
+<rect x="440" y="1120" width="180" height="40" rx="10" fill="#ffdeeb" stroke="#c2255c" stroke-width="2"/>
+<text x="530.0" y="1144.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">human action</text>
+<rect x="640" y="1120" width="180" height="40" rx="10" fill="#e9ecef" stroke="#495057" stroke-width="2"/>
+<text x="730.0" y="1144.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">data store</text>
+<rect x="840" y="1120" width="180" height="40" rx="10" fill="#e5dbff" stroke="#7048e8" stroke-width="2"/>
+<text x="930.0" y="1144.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">skill</text>
+<rect x="1040" y="1120" width="180" height="40" rx="10" fill="#fff3bf" stroke="#e67700" stroke-width="2"/>
+<text x="1130.0" y="1144.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">orchestrator</text>
+<rect x="1240" y="1120" width="180" height="40" rx="10" fill="#ffe3e3" stroke="#e03131" stroke-width="2"/>
+<text x="1330.0" y="1144.9" font-size="14" fill="#1e1e1e" text-anchor="middle" font-weight="bold">hard gate</text>
+<text x="1460" y="1138.0" font-size="13" fill="#495057" font-style="italic">solid arrow = handoff · dashed = context / loop</text></svg>

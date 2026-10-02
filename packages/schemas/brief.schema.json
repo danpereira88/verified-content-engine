@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "brief.schema.json",
+  "title": "brief",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "product_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "content_type": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "audience": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "stage": {
+      "$ref": "common.schema.json#/$defs/stage"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "mandated_wording": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "where": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "where",
+          "text"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    }
+  },
+  "required": [
+    "id",
+    "product_id",
+    "content_type",
+    "title",
+    "audience",
+    "goal",
+    "stage",
+    "notes",
+    "mandated_wording",
+    "created_by",
+    "created_at"
+  ],
+  "additionalProperties": false
+}

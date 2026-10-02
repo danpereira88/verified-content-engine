@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gate-verdicts.schema.json",
+  "title": "gate-verdicts",
+  "type": "object",
+  "properties": {
+    "draft_hash": {
+      "$ref": "common.schema.json#/$defs/sha256"
+    },
+    "sentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "integer"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "section": {
+            "type": "string"
+          },
+          "classification": {
+            "type": "string",
+            "enum": [
+              "factual",
+              "positioning",
+              "positioning-hiding-fact"
+            ]
+          },
+          "cited_ids": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/claim_id"
+            }
+          },
+          "relevant_ids": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/claim_id"
+            }
+          },
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "block",
+              "flag"
+            ]
+          },
+          "reason": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "common.schema.json#/$defs/reason_code"
+              }
+            ]
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "suggested_fix": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "text",
+          "section",
+          "classification",
+          "cited_ids",
+          "relevant_ids",
+          "verdict",
+          "reason",
+          "explanation",
+          "suggested_fix"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "page_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "tension",
+              "implied-conclusion",
+              "colliding-absolutes"
+            ]
+          },
+          "sentence_indexes": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            },
+            "minItems": 1
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/claim_id"
+            }
+          },
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "block",
+              "flag"
+            ]
+          },
+          "reason": {
+            "$ref": "common.schema.json#/$defs/reason_code"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "sentence_indexes",
+          "claim_ids",
+          "verdict",
+          "reason",
+          "explanation"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "draft_hash",
+    "sentences",
+    "page_checks"
+  ],
+  "additionalProperties": false
+}

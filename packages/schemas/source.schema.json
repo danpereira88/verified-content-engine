@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source.schema.json",
+  "title": "source",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "product_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "type": {
+      "$ref": "common.schema.json#/$defs/source_type"
+    },
+    "title": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "file",
+            "url"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "living",
+        "changelog",
+        "style",
+        "positioning",
+        "evidence",
+        "brief",
+        "other"
+      ]
+    },
+    "updated": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fetched_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    },
+    "sha256": {
+      "$ref": "common.schema.json#/$defs/sha256"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "removed",
+        "extraction-failed"
+      ]
+    },
+    "words": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id",
+    "product_id",
+    "type",
+    "origin",
+    "kind",
+    "fetched_at",
+    "sha256",
+    "status"
+  ],
+  "additionalProperties": false
+}

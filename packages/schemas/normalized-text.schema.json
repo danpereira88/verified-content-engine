@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "normalized-text.schema.json",
+  "title": "normalized-text",
+  "type": "object",
+  "properties": {
+    "source_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "sha256": {
+      "$ref": "common.schema.json#/$defs/sha256"
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "loc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "heading_path": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "heading_path",
+          "text"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "source_id",
+    "sha256",
+    "blocks"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "product.schema.json",
+  "title": "product",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "workspace_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "slug": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "company": {
+      "type": "string"
+    },
+    "claim_prefix": {
+      "$ref": "common.schema.json#/$defs/claim_prefix"
+    },
+    "content_types": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "high_risk_categories": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/category"
+      }
+    },
+    "buyer_persona": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "style_threshold": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "style_threshold_accepted_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checkers": {
+      "type": "object",
+      "properties": {
+        "style": {
+          "type": "boolean"
+        },
+        "best_practice": {
+          "type": "boolean"
+        },
+        "synthetic_buyer": {
+          "type": "boolean"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "models": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    }
+  },
+  "required": [
+    "id",
+    "workspace_id",
+    "slug",
+    "name",
+    "claim_prefix",
+    "content_types",
+    "high_risk_categories",
+    "created_at"
+  ],
+  "additionalProperties": false
+}

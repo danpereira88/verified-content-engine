@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "draft-meta.schema.json",
+  "title": "draft-meta",
+  "type": "object",
+  "properties": {
+    "claim_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sentence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/claim_id"
+            }
+          }
+        },
+        "required": [
+          "sentence",
+          "claim_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "missing_claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "need": {
+            "type": "string",
+            "minLength": 1
+          },
+          "section": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "need",
+          "section"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "writing_aid_flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "aid": {
+            "type": "string",
+            "minLength": 1
+          },
+          "issue": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "aid",
+          "issue"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "claim_map",
+    "missing_claims",
+    "writing_aid_flags"
+  ],
+  "additionalProperties": false
+}

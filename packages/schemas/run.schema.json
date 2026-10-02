@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run.schema.json",
+  "title": "run",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "workspace_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "product_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "ingest",
+        "content",
+        "quick-check"
+      ]
+    },
+    "brief_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "running",
+        "succeeded",
+        "failed",
+        "budget-stopped"
+      ]
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "running",
+              "done",
+              "failed",
+              "skipped"
+            ]
+          },
+          "attempts": {
+            "type": "integer"
+          },
+          "tokens": {
+            "type": "integer"
+          },
+          "error": {
+            "type": "string"
+          },
+          "output_ref": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "status",
+          "attempts",
+          "tokens"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "tokens_used": {
+      "type": "integer"
+    },
+    "budget_tokens": {
+      "type": "integer"
+    },
+    "error": {
+      "type": "string"
+    },
+    "created_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    },
+    "updated_at": {
+      "$ref": "common.schema.json#/$defs/datetime"
+    }
+  },
+  "required": [
+    "id",
+    "workspace_id",
+    "product_id",
+    "kind",
+    "status",
+    "steps",
+    "tokens_used",
+    "budget_tokens",
+    "created_at",
+    "updated_at"
+  ],
+  "additionalProperties": false
+}
